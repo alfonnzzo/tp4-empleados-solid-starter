@@ -41,6 +41,18 @@ npm install
 npm run dev
 ```
 
+## Estructura
+
+- src/server.ts: conecta a MongoDB y levanta el servidor.
+- src/app.ts: arma las dependencias y configura Express.
+- src/routes: define las rutas y las asocia al controller.
+- src/controllers: lee la petición y arma la respuesta HTTP.
+- src/services: aplica las validaciones y la regla de negocio del salario.
+- src/repositories: guarda y consulta empleados. El service solo conoce la interfaz.
+- src/models: define el esquema de Mongoose.
+- src/errors: define los errores con código HTTP.
+- src/middlewares: contiene el errorHandler que convierte los errores en respuestas.
+
 ## Consigna
 
 Identificar los problemas del diseño actual y refactorizarlo.
